@@ -45,7 +45,6 @@ header {
   height: 9vh;
   box-shadow: 2px 2px 5px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-
 }
 
 body {
@@ -54,12 +53,9 @@ body {
   font-size: 2rem;
 }
 
-/* body {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-} */
+h3 {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
 
 .container {
   /* border: 3px solid green; */
@@ -69,6 +65,7 @@ body {
 
 .game {
   display: flex;
+  /* max-width: var(--container-width); */
   /* border: 3px solid red; */
   padding: 20px;
   /* height: 680px; */
@@ -78,7 +75,6 @@ body {
   /* background-image: var(--main-bg-image); */
 }
 
-
 .bg-image {
   background-image: url('images/player.jpg');
   background-size: contain;
@@ -86,8 +82,6 @@ body {
   background-position: center;
   /* box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
   box-shadow: 2px 2px 5px;
-
-
 }
 
 .output {
@@ -99,10 +93,11 @@ body {
   width: 75%;
   /* testing: */
   text-align: center;
+  /* Keep or erase below?? Ask Davi, Miah: */
+  background: #f2f2f2;
   /* text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
   box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   /* text-shadow: 2px 4px 3px #eb4d4d; */
-
 }
 
 .new-game-btn {
@@ -133,7 +128,6 @@ body {
   flex-direction: column;
   box-shadow: 2px 2px 5px;
   /* font-size: 1.75rem; */
-
 }
 
 .icons {
@@ -145,22 +139,32 @@ body {
   /* padding: 2rem; */
   width: 100%;
   margin: 2rem;
-
 }
 
-i {
+/* i {
   padding: 2rem;
   display: inline-block;
   border-radius: 60px;
   padding: 0.5em 0.6em;
-  /* border: none; */
   outline: none;
-  /* border: 1px solid #eb4d4d; */
   background: #eb4d4d;
   color: var(--main-bg-color);
   box-shadow: 10px 10px 8px #888888;
-  /* text-shadow: 2px 4px 3px var(--main-font-color); */
-  ;
+} */
+
+i {
+  color: var(--main-font-color);
+  /* margin-right: 40px; */
+}
+.icons i {
+  padding: 2rem;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 0.5em 0.6em;
+  outline: none;
+  background: #eb4d4d;
+  color: var(--main-bg-color);
+  box-shadow: 10px 10px 8px #888888;
 }
 
 .ion-play {
@@ -177,7 +181,6 @@ button {
   /* transform: translateX(-50%);
   transition: background-color 0.3s,
     color 0.3s; */
-
 }
 
 .player-0-container,
@@ -204,7 +207,8 @@ button {
   margin-bottom: 10px;
 }
 
-.player-choice {
+.player-choice-0,
+.player-choice-1 {
   /* border: 4px solid red; */
   text-align: center;
   font-weight: 100;
