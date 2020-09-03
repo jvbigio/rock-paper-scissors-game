@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 
-A simple game written in vanilla JavaScript, HTML, and CSS. This application allows you to play against the computer as many times as you want by simply pressing you next move.
+A simple game written in vanilla JavaScript, HTML, and CSS. This application allows you to play against the computer as many times as you want by simply pressing your next move.
 
 Play game [here](https://jvbigio.github.io/rock-paper-scissors-game/)
 
