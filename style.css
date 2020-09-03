@@ -12,14 +12,13 @@
 }
 
 body {
-  background-image: url('images/rock-paper-scissors.svg');
+  background-image: url('https://i.postimg.cc/3rnL2LY8/rock-paper-scissors.png');
   font-family: var(--font-body-stack);
   font-size: 2rem;
 }
 
 header {
   background-color: #eb4d4d;
-  height: 9vh;
   box-shadow: 2px 2px 5px;
   display: flex;
   justify-content: center;
@@ -27,7 +26,8 @@ header {
   position: relative;
   display: flex;
   text-align: center;
-  height: 9vh;
+  height: 100%;
+  padding: 1rem;
   box-shadow: 2px 2px 5px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }

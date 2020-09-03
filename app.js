@@ -81,10 +81,4 @@ function game (e) {
       scissorsPaper()
     }
   })
-  // keep?
-  // setTimeout(_ => {
-  //   playerIcon.innerHTML = ''
-  //   computerIcon.innerHTML = ''
-  //   output.textContent = ''
-  // }, 3000)
 }
