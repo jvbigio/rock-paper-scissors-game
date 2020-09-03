@@ -6,7 +6,7 @@ const output = document.querySelector('.output')
 const playerIcon = document.querySelector('.player-choice-0')
 const computerIcon = document.querySelector('.player-choice-1')
 
-function renderComputerIcons () {
+function getComputerChoice () {
   const computerChoices = ['rock', 'paper', 'scissors']
   const computerChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)]
   return computerChoice
@@ -62,7 +62,7 @@ function scissorsPaper () {
 
 function game (e) {
   const playerChoice = e.target.closest('button').classList.value
-  const computerChoice = renderComputerIcons()
+  const computerChoice = getComputerChoice()
 
   renderIcons.forEach((value, key) => {
     if (playerChoice === key && computerChoice === key) {
