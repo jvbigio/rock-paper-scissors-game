@@ -16,69 +16,35 @@ const renderIcons = new Map()
 renderIcons.set('rock', '<i class="far fa-hand-rock fa-2x rock">')
 renderIcons.set('paper', '<i class="fas fa-toilet-paper fa-2x"></i>')
 renderIcons.set('scissors', '<i class="fas fa-cut fa-2x"></i>')
-renderIcons.set('tie', '<i class="fas fa-skull-crossbones fa-2x"></i>')
-
-function tie (value) {
-  output.innerHTML = '<h3>Tie! Try again...</h3>'
-  playerIcon.innerHTML = value
-  computerIcon.innerHTML = value
-}
-
-function rockPaper () {
-  output.innerHTML = '<h3>Paper covers rock. You lose!</h3>'
-  playerIcon.innerHTML = renderIcons.get('rock')
-  computerIcon.innerHTML = renderIcons.get('paper')
-}
-
-function rockScissors () {
-  output.innerHTML = '<h3>Rock crushes scissors. You win!</h3>'
-  playerIcon.innerHTML = renderIcons.get('rock')
-  computerIcon.innerHTML = renderIcons.get('scissors')
-}
-
-function paperRock () {
-  output.innerHTML = '<h3>Paper covers rock. You win!</h3>'
-  playerIcon.innerHTML = renderIcons.get('paper')
-  computerIcon.innerHTML = renderIcons.get('rock')
-}
-
-function paperScissors () {
-  output.innerHTML = '<h3>Scissors cuts paper. You lose!</h3>'
-  playerIcon.innerHTML = renderIcons.get('paper')
-  computerIcon.innerHTML = renderIcons.get('scissors')
-}
-
-function scissorsRock () {
-  output.innerHTML = '<h3>Rock crushes scissors. You lose!</h3>'
-  playerIcon.innerHTML = renderIcons.get('scissors')
-  computerIcon.innerHTML = renderIcons.get('rock')
-}
-
-function scissorsPaper () {
-  output.innerHTML = '<h3>Scissors cuts paper. You win!</h3>'
-  playerIcon.innerHTML = renderIcons.get('scissors')
-  computerIcon.innerHTML = renderIcons.get('paper')
-}
 
 function game (e) {
   const playerChoice = e.target.closest('button').classList.value
   const computerChoice = getComputerChoice()
+  const playerChoseRock = playerChoice === 'rock'
+  const playerChosePaper = playerChoice === 'paper'
+  const playerChoseScissors = playerChoice === 'scissors'
+  const computerChoseRock = computerChoice === 'rock'
+  const computerChosePaper = computerChoice === 'paper'
+  const computerChoseScissors = computerChoice === 'scissors'
 
-  renderIcons.forEach((value, key) => {
-    if (playerChoice === key && computerChoice === key) {
-      tie(value)
-    } else if (playerChoice === 'rock' && computerChoice === 'paper') {
-      rockPaper()
-    } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
-      rockScissors()
-    } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-      paperRock()
-    } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
-      paperScissors()
-    } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
-      scissorsRock()
-    } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-      scissorsPaper()
-    }
-  })
+  playerIcon.innerHTML = renderIcons.get(playerChoice)
+  computerIcon.innerHTML = renderIcons.get(computerChoice)
+
+  if (playerChoseRock && computerChosePaper) {
+    output.innerHTML = '<h3>Paper covers rock. You lose!</h3>'
+  } else if (playerChoseRock && computerChoseScissors) {
+    output.innerHTML = '<h3>Rock crushes scissors. You win!</h3>'
+  } else if (playerChosePaper && computerChoseRock) {
+    output.innerHTML = '<h3>Paper covers rock. You win!</h3>'
+  } else if (playerChosePaper && computerChoseScissors) {
+    output.innerHTML = '<h3>Scissors cuts paper. You lose!</h3>'
+  } else if (playerChoseScissors && computerChoseRock) {
+    output.innerHTML = '<h3>Rock crushes scissors. You lose!</h3>'
+  } else if (playerChoseScissors && computerChosePaper) {
+    output.innerHTML = '<h3>Scissors cuts paper. You win!</h3>'
+  } else {
+    output.innerHTML = '<h3>Tie! Try again...</h3>'
+    playerIcon.innerHTML = renderIcons.get(playerChoice)
+    computerIcon.innerHTML = renderIcons.get(computerChoice)
+  }
 }
