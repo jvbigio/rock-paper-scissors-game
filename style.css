@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: url('https://i.postimg.cc/3rnL2LY8/rock-paper-scissors.png');
+  background-image: url('./images/rock-paper-scissors.svg');
   font-family: var(--font-body-stack);
   font-size: 2rem;
 }
@@ -40,13 +40,16 @@ h3 {
 .container {
   max-width: var(--container-width);
   margin: 2rem auto;
+  height: 50vh;
 }
 
 .game {
   display: flex;
   padding: 20px;
   background-color: var(--main-bg-color);
+  height: 100%;
 }
+
 
 .bg-image {
   background-image: url('images/player.jpg');

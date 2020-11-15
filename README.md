@@ -6,9 +6,7 @@ Play game [here](https://jvbigio.github.io/rock-paper-scissors-game/)
 
 # Images
 
-Screenshot:
-
-![Image of a list of tasks](https://i.postimg.cc/3NmcTGdL/rock-paper-scissors.png)
+![rock-paper-scissors](https://user-images.githubusercontent.com/43301741/99193722-ca4b6780-2748-11eb-9a84-cf4c02903221.png)
 
 # Summary
 
